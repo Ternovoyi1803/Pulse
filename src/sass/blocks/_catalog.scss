@@ -1,0 +1,178 @@
+.catalog {
+    padding-bottom: 80px;
+    min-height: 1210px;
+    &__tabs {
+        list-style-type: none;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        font-size: 18px;
+        line-height: 48px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #6b6b6b;
+        text-align: center;
+        margin: 0 5px;
+        transform: skewX(-25deg);
+        transition: 0.3s all;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            background-color: #c70101;
+            color: #fff;
+            border: none;
+        }
+    }
+    &__items {
+        margin-top: 59px;
+        display: none;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
+    }
+    &__item {
+        padding: 20px 20px 27px 20px;
+        margin: 0 6.6px;
+        width: 300px;
+        min-height: 440px;
+        border: 2px solid #e8e8e8;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    &__wrapper {
+        width: calc(200% + 40px);
+        display: flex;
+    }
+    &__main {
+        width: 50%;
+        margin-right: 20px;
+        transform: translateX(calc(-100% - 40px));
+        transition: 0.5s all;;
+        &_active {
+            transform: translateX(0);
+        }
+    }
+    &__back {
+        width: 50%;
+        margin-left: 20px;
+        position: relative;
+        transform: translateX(0);
+        transition: 0.5s all;;
+        &_active {
+            transform: translateX(calc(-100% - 40px));
+        }
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 20px;
+        li {
+            position: relative;
+            margin-bottom: 22px;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #555555;
+            &:before {
+                content: '';
+                width: 5px;
+                height: 5px;
+                background-color: #c70101;
+                position: absolute;
+                top: 5px;
+                left: -14px;
+            }
+        }
+    }
+    &__backlink {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+        color: $main-color;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover {
+            color: $second-hover-color
+        }
+    }
+    &__img {
+        margin: 0 auto;
+        height: 202px;
+        width: 142px;
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+        color: #0d0d0d;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 300;
+        color: #0d0d0d;
+        text-align: center;
+        margin-top: 16px;
+    }
+    &__link {
+        display: block;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: $main-color;
+        text-align: center;
+        margin-top: 17px;
+        &:hover {
+            color: $second-hover-color
+        }
+    }
+    &__divider {
+        height: 1px;
+        background-color: #e8e8e8;
+        margin-top: 19px;
+    }
+    &__buy {
+        margin-top: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__amountdiscount {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 300;
+        color: #555555;
+        text-decoration: line-through;
+    }
+    &__amountcurrent {
+        margin-top: 9px;
+        font-size: 20px;
+        line-height: 20px;        
+        font-weight: 700;
+        color: #050505;
+    }
+}

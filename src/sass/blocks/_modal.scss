@@ -1,0 +1,59 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal {
+    overflow: visible;
+    padding-top: 38px;
+    width: 380px;
+    height: 400px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &__close {
+        position: absolute;
+        top: -5px;
+        right: -38px;
+        color: $main-color;
+        font-size: 41px;
+        line-height: 41px;
+        width: 21px;
+        height: 21px;
+        &:hover {
+            color: $second-hover-color;
+            text-decoration: none;
+        }
+    }
+    &__header {
+        font-size: 19px;
+        line-height: 19px;
+        font-weight: 500;
+        color: #0d0d0d;
+        text-align: center;
+    }
+    &__subheader {
+        margin-top: 11px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        color: #0d0d0d;
+        text-align: center;
+    }
+    &_thanks {
+        height: 140px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+#consultation, #order, #thanks {
+    display: none;
+}
