@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
-        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -124,9 +123,9 @@
                 и мы перезвоним вам в течении 10 минут
             </div>
             <form class="feed-form" action="#">
-                <input required placeholder="Ваше имя" type="text">
-                <input required placeholder="Ваш телефон" type="number">
-                <input required placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">Заказать консультацию</button>
             </form>
         </div>
@@ -610,10 +609,10 @@
         <div class="modal__header">Просто заполните форму заявки</div>
         <div class="modal__subheader">и мы перезвоним вам в течении 10 минут</div>
 
-        <form class="feed-form feed-form_modal" action="#">
-            <input required placeholder="Ваше имя" type="text">
-            <input required placeholder="Ваш телефон" type="number">
-            <input required placeholder="Ваш E-mail" type="email">
+        <form id="form-consultation" class="feed-form feed-form_modal" action="#">
+            <input name="name" placeholder="Ваше имя">
+            <input name="phone" placeholder="Ваш телефон">
+            <input name="email" placeholder="Ваш E-mail">
             <button class="button button_submit">Заказать консультацию</button>
         </form>
     </div>
@@ -623,10 +622,10 @@
         <div class="modal__header">Ваш заказ</div>
         <div class="modal__subheader">Пульсометр Polar FT1</div>
 
-        <form class="feed-form feed-form_modal" action="#">
-            <input required placeholder="Ваше имя" type="text">
-            <input required placeholder="Ваш телефон" type="number">
-            <input required placeholder="Ваш E-mail" type="email">
+        <form id="form-order" class="feed-form feed-form_modal" action="#">
+            <input name="name" placeholder="Ваше имя">
+            <input name="phone" placeholder="Ваш телефон">
+            <input name="email" placeholder="Ваш E-mail">
             <button class="button button_submit">Купить</button>
         </form>
     </div>
@@ -637,7 +636,7 @@
         <div class="modal__subheader">
             Наш менеджер свяжется с вами в ближайшее время!
         </div>
-    </div>  
+    </div>
 </div>
 
 
@@ -646,8 +645,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="js/slick.min.js">
-    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="js/script.js">
     </script>
 </body>

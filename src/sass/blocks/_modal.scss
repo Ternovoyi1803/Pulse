@@ -10,14 +10,15 @@
 
 .modal {
     overflow: visible;
-    padding-top: 38px;
+    padding: 38px 0 40px 0;
     width: 380px;
-    height: 400px;
+    min-height: 400px;
     background-color: #f2f2f2;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
     &__close {
         position: absolute;
         top: -5px;
@@ -27,6 +28,7 @@
         line-height: 41px;
         width: 21px;
         height: 21px;
+        cursor: pointer;
         &:hover {
             color: $second-hover-color;
             text-decoration: none;
@@ -48,7 +50,7 @@
         text-align: center;
     }
     &_thanks {
-        height: 140px;
+        min-height: 140px;
         padding-left: 70px;
         padding-right: 70px;
     }

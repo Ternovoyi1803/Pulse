@@ -44,4 +44,37 @@ $(document).ready(function(){
                 .eq(i).text());
         });
     });
+
+    function validate(formId) {
+        $(formId).validate({
+            rules: {
+              name: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+              },
+              phone: {
+                  required: true
+              },
+              email: {
+                required: true,
+                email: true
+              }
+            },
+            messages: {
+                name: "Введите ваше имя",
+                phone: "Введите номер телефона",
+                email: {
+                  required: "Введите почту",
+                  email: "Введите корректную почту"
+                }
+              }
+          });
+    }
+
+    validate('#form-consultation');
+    validate('#form-order');
+    validate('.consultation form');
+
+    $('[name="phone"]').mask("+7 (999) 999-99-99");
   });
