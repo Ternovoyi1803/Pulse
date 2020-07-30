@@ -76,7 +76,9 @@ $(document).ready(function(){
     validate('#form-order');
     validate('.consultation form');
 
+    
     $('[name="phone"]').mask("+7 (999) 999-99-99");
+
 
     $('form').submit(function(e) {
         e.preventDefault();
@@ -91,6 +93,23 @@ $(document).ready(function(){
 
             $('form').trigger('reset');
         });
+        return false;
+    });
+
+    // page up
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1200) {
+            $('.pageup').fadeIn();
+        }
+        else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    // smooth scrolling
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
   });
