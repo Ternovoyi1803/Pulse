@@ -2,6 +2,12 @@
 @import "base/mixins";
 @import "base/animations";
 
+@import "libs/animate.min";
+@import "libs/bootstrap.min";
+@import "libs/flaticon";
+@import "libs/font";
+@import "libs/slick";
+
 * {font-family: 'Museo Sans Cyrl', sans-serif}
 
 ul {
