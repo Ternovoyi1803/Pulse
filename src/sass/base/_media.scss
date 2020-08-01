@@ -1,0 +1,146 @@
+@media only screen and (max-width: 991px) {
+    .carousel {
+        &__inner {
+            max-width: calc(100% - 216px);
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .catalog {
+        &__items {
+            justify-content: space-around;
+            padding: 0 35px;
+        }
+    }
+    .feedback {
+        &__info {
+            width: 445px;
+        }
+    }
+    .footer {
+        &__info {
+            left: auto;
+            right: 0;
+            transform: none;
+        }
+        &__iframe {
+            height: 100vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        justify-content: space-around;
+        align-items: space-between;
+        &__official {
+            display: none;
+        }
+        &__logo {
+            img {
+                width: 260px;
+            }
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 35px;
+            line-height: 35px;
+        }
+        &__wrapper {
+            align-items: center;
+        }
+        &__subheader {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    .title_left {
+        font-size: 23px;
+        text-align: center;
+    }
+    .consultation {
+        padding-top: 40px;
+        padding-bottom: 0;
+        min-height: 560px;
+        &__subtitle {
+            margin-top: 40px;
+            text-align: center;
+        }
+    } 
+    .feed-form {
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        input {
+            width: 100%;
+            display: block;
+        }
+    }
+    .carousel {
+        &__inner {
+            max-width: calc(100% - 120px);          
+        }
+        .slick-prev {
+            left: -60px;
+        }
+        .slick-next {
+            right: -60px;
+        }
+    }
+    .catalog {
+        &__wrapper {
+
+        }
+        &__wrapper-info {
+            position: relative;
+            width: 50%;
+        }
+        &__main {
+            display: flex;
+            justify-content: space-between;           
+        }
+        &__item {
+            width: 400px;
+            min-height: 345px;
+        }
+        &__link {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 0;
+        }
+        &__tab {
+            width: 160px;
+            font-size: 16px;
+        }
+    }
+    .advantages {
+        &__items {
+            margin-top: 30px;
+        }
+        &__header {
+            min-height: 37px;
+        }
+    }
+    .feedback {
+        &__info {
+            width: 270px;
+        }
+    }
+    .footer {
+        &__info {
+            opacity: 0.85;
+            right: auto;
+            width: 100%;
+        }
+        &__iframe {
+            height: 100vh;
+        }
+    }
+}
