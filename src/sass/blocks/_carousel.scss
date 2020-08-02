@@ -1,9 +1,13 @@
 .carousel {
     padding: 108px 0;
+    overflow: hidden;
     &__inner {
         width: 760px;
         margin: 0 auto;
         position: relative;
+    img {
+        max-width: 100%;
+    }
     }
     .slick-prev {
         border: none;
