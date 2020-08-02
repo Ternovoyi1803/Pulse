@@ -7,13 +7,15 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         //variableWidth: true,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 575,
             settings: {
                 arrows: false,
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true
+                }
             }
-        }]
+        ]
     });
 
     // $(window).on('resize', function() {
