@@ -1,2 +1,2 @@
 # Pulse
-pulse.ternovyi.com
+https://pulse.ternovyi.com/
